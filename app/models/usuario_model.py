@@ -9,8 +9,8 @@ class Usuario(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     nome = Column(String(150))
-    nome = Column(String(150))
-    nome = Column(String(150))
+    email = Column(String(150))
+    senha = Column(String(150))
 
     def __init__(self, nome : str, email : str, senha : str):
         self.nome = nome

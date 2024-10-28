@@ -12,7 +12,7 @@ class UsuarioService:
 
             novo_usuario = self.repository.pesquisar_usuario_por_email(usuario.email)
 
-            if not novo_usuario:
+            if novo_usuario:
                 print("Usuario já cadastrado!")
                 return
             
@@ -24,6 +24,6 @@ class UsuarioService:
 
     
     def listar_todos_usuarios(self):
-        return self.repository.listar_usuarios()
+        return self.repository.listar_usuario()
 
        
